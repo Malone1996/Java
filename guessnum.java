@@ -1,5 +1,5 @@
 package guess;
-import java.util.Random;
+import java.util.Random;//æ­¤å¤„é‡‡ç”¨utilçš„Randomäº§ç”Ÿéšæœºæ•°ï¼Œå¦å¤–è¿˜æœ‰Math.randomäº§ç”Ÿéšæœºæ•°çš„æ–¹å¼
 import java.util.Scanner;
 
 public class guessnum {
@@ -7,25 +7,25 @@ public class guessnum {
 		Scanner input =new Scanner(System.in);
 		Random random=new Random();
 		int s=random.nextInt(100)+1;
-		System.out.println("ÇëÊäÈëÄã²ÂµÄÊı(1-100):");
+		System.out.println("è¯·è¾“å…¥ä½ çŒœçš„æ•°(1-100):");
 		
-		for (int i = 0; i < 100; i++){
+		for (int i = 0; i < 100; i++){//åŠ å…¥forå¾ªç¯å®ç°å¤šæ¬¡è¾“å…¥ç›´è‡³è¾“å…¥ç»“æœæ­£ç¡®
 		
 		int num1=input.nextInt();
 		
 		if (num1>s){
-			System.out.println("Äã²ÂµÄ´óÁË£¡");
-			System.out.println("ÇëÔÙ´ÎÊäÈëÄã²ÂµÄÊı(1-100):");
+			System.out.println("ä½ çŒœçš„å¤§äº†ï¼");
+			System.out.println("è¯·å†æ¬¡è¾“å…¥ä½ çŒœçš„æ•°(1-100):");
 		}
 		else if (num1<s){
-			System.out.println("Äã²ÂµÄĞ¡ÁË£¡");
-			System.out.println("ÇëÔÙ´ÎÊäÈëÄã²ÂµÄÊı(1-100):");
+			System.out.println("ä½ çŒœçš„å°äº†ï¼");
+			System.out.println("è¯·å†æ¬¡è¾“å…¥ä½ çŒœçš„æ•°(1-100):");
 			
 		}
 		
 		else{
-			System.out.println("Äã²Â¶ÔÁË£¡");
-			System.out.println("game over£¡");
+			System.out.println("ä½ çŒœå¯¹äº†ï¼");
+			System.out.println("game overï¼");
 		}
 		}
 	}
