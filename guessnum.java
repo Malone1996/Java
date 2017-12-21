@@ -8,7 +8,7 @@ public class guessnum {
 		Random random=new Random();
 		int s=random.nextInt(100)+1;
 		System.out.println("请输入你猜的数(1-100):");
-		
+		int a=1;
 		for (int i = 0; i < 100; i++){//加入for循环实现多次输入直至输入结果正确
 		
 		int num1=input.nextInt();
@@ -26,8 +26,11 @@ public class guessnum {
 		else{
 			System.out.println("你猜对了！");
 			System.out.println("game over！");
+			break;
 		}
+			a=a+1;
 		}
-	}
+		
+	}System.out.println("你猜了"+a+"次");
 	
 }
